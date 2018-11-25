@@ -1,0 +1,7 @@
+version: '2.0'
+services:
+  zabbix-semmer:
+    image: zabbix-test
+    environment:
+      - DB_SERVER_HOST=localhost
+      - MYSQL_ROOT_PASSWORD=password
