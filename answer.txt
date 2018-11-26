@@ -1,0 +1,3 @@
+I have choose ansible playbook to export template becasue:
+* Ansible playbook is already used in this project.
+* its easy to run on multiple cluster Zabbix servers.
