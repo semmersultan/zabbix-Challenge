@@ -7,6 +7,11 @@ This challenge was very fun to do and the open ended style of the specification 
 The application is a simple zabbix servers that responds on the following endpoints.
 I have used the makefile to make things easier: to start
 
+**make test-lint-yaml**
+```
+This will check the yml syntax before run the actual application
+```
+
 **make build**
 ```
 This will build the one container image contain zabbix-server-mysql zabbix-frontend-php zabbix-agent
