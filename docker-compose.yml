@@ -11,3 +11,7 @@ services:
     volumes:
       - ".:/workdir"
     working_dir: /workdir
+  shush_decrypt:
+    build:
+     context: ./shush
+     dockerfile: Dockerfile
