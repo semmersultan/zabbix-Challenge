@@ -19,8 +19,8 @@ deploy:
 
 add-host:
 	@echo "-----------------add host using ansible playbook"
-	@ansible-playbook -i hosts ansible/add-host.yml
+	@ansible-playbook -i ansible/hosts ansible/add-host.yml
 
 export-template:
-	@echo "-----------------add host using ansible playbook"
-	@ansible-playbook -i hosts ansible/export-template.yml
+	@echo "-----------------export template using ansible playbook"
+	@ansible-playbook -i ansible/hosts ansible/export-template.yml

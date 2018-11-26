@@ -31,7 +31,7 @@ zabbix-semmer_1  | ==> Starting MySQL...
 zabbix-semmer_1  | ==> Creating Zabbix database...
 zabbix-semmer_1  | ==> Import initial schema and data.
 ```
-**make addhost**
+**make add-host**
 
 ```
 -----------------add host using ansible playbook
@@ -42,7 +42,14 @@ PLAY [all] *********************************************************************
 skipping: no hosts matched
 
 PLAY RECAP ************************************************************************************************************************************
+```
+**make export-template**
+```
+-----------------export template using ansible playbook
 
+PLAY [all] ************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************
 ```
 
 # Assumptions
