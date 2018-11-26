@@ -4,7 +4,7 @@
   - name: Dump Zabbix template
     local_action:
       module: zabbix_template
-      server_url: http://localhost:80/zabbix/
+      server_url: http://localhost:8080/zabbix/
       login_user: Admin
       login_password: zabbix
       template_name: Template App Zabbix Agent

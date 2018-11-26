@@ -4,7 +4,7 @@
   - name: add new host in zabbix server
     local_action:
       module: zabbix_host
-      server_url: "{{ http://localhost:80/zabbix/ }}"
+      server_url: "{{ http://localhost:8080/zabbix/ }}"
       login_user: "{{ Admin }}"
       login_password: "{{ zabbix }}"
       host_name: "{{ testhost.nsw.education }}"
