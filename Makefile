@@ -17,6 +17,10 @@ deploy:
 	@echo "-----------------compose the new build container"
 	@docker-compose up
 
-addhost:
+add-host:
 	@echo "-----------------add host using ansible playbook"
-	@ansible-playbook ansible/add-host.yml
+	@ansible-playbook -i hosts ansible/add-host.yml
+
+export-template:
+	@echo "-----------------add host using ansible playbook"
+	@ansible-playbook -i hosts ansible/export-template.yml
