@@ -31,6 +31,19 @@ zabbix-semmer_1  | ==> Starting MySQL...
 zabbix-semmer_1  | ==> Creating Zabbix database...
 zabbix-semmer_1  | ==> Import initial schema and data.
 ```
+**make addhost**
+
+```
+-----------------add host using ansible playbook
+ [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+
+PLAY [all] ************************************************************************************************************************************
+skipping: no hosts matched
+
+PLAY RECAP ************************************************************************************************************************************
+
+```
 
 # Assumptions
 

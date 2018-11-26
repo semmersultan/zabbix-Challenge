@@ -16,3 +16,7 @@ show:
 deploy:
 	@echo "-----------------compose the new build container"
 	@docker-compose up
+
+addhost:
+	@echo "-----------------add host using ansible playbook"
+	@ansible-playbook ansible/add-host.yml
