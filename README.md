@@ -55,9 +55,11 @@ Zabbix - zabbix 4.0  {zabbix-server zabbix-agent apache2}.
 
 Ubuntu - 16.04
 
-makefile - use to simply the processes inase you need to bundle with CI/CD in future.
+Makefile - use to simply the processes incase you need to bundle with CI/CD in future.
 
 Docker - Docker satisfied the condition that the application be packaged as a deployable artifact with dependencies enclosed.
+
+Ansible - Use to automate the process
 
 # To run the app locally
 
