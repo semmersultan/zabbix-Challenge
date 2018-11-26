@@ -1,0 +1,25 @@
+---
+- hosts: all
+  tasks:
+  - name: add new host in zabbix server
+    local_action:
+      module: zabbix_host
+      server_url: "{{ http://localhost:80/zabbix/ }}"
+      login_user: "{{ Admin }}"
+      login_password: "{{ zabbix }}"
+      host_name: "{{ testhost.nsw.education }}"
+      visible_name: "{{ inventory_hostname }}"
+      host_groups:
+        - test servers
+      link_templates:
+        - Template_Linux
+      status: enabled
+      state: present
+      inventory_mode: automatic
+      interfaces:
+        - type: 1
+          main: 1
+          useip: 1
+          ip: "172.17.0.2"
+          dns: "{{ inventory_hostname }}"
+          port: 10050
