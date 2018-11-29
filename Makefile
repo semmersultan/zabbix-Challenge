@@ -18,11 +18,11 @@ show:
 	@echo "------------------Show the newly build container"
 	@docker images | grep $(APP_NAME)
 
-deploy:
+deploy: deps
 	@echo "-----------------compose the new build container"
-	@docker-compose up \
-	-o DatabaseUser=$$(docker-compose run shush_decrypt $(db_user)) \
-	-o DatabasePassword=$$(docker-compose run shush_decrypt $(db_pass)) \
+	@docker-compose run --rm zabbix-test \
+	-o DB_SERVER_HOST=$$(docker-compose run shush_decrypt $(db_user)) \
+	-o MYSQL_ROOT_PASSWORD=$$(docker-compose run shush_decrypt $(db_pass)) \
 
 add-host:
 	@echo "-----------------add host using ansible playbook"

@@ -17,10 +17,6 @@ echo "==> Import initial schema and data."
 echo "==> Starting Services..."
 systemctl start zabbix-server zabbix-agent apache2
 
-if [ "$#" -ne 0 ]; then
-	# execute user commands
-	$@
-else
 	# tail logs
 	echo "==> Tailing logs..."
 	tail -f \
